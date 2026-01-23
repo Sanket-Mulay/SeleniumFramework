@@ -1,0 +1,21 @@
+<suite name="Parallel Cross Browser Suite" parallel="tests" thread-count="2">
+
+    <!-- Test 1: Login Feature on Chrome -->
+    <test name="Login Feature - Chrome">
+        <parameter name="browser" value="chrome"/>
+        <parameter name="featurePath" value="/Cucumber/src/test/resources/com/features/LoginPage.feature"/>
+        <classes>
+            <class name="com.Runner.MyTestRunner"/>
+        </classes>
+    </test>
+
+    <!-- Test 2: Alarm Feature on Safari -->
+    <test name="Alarm Feature - Safari">
+        <parameter name="browser" value="safari"/>
+        <parameter name="featurePath" value="/Cucumber/src/test/resources/com/features/AlarmPage.feature"/>
+        <classes>
+            <class name="com.Runner.MyTestRunner"/>
+        </classes>
+    </test>
+
+</suite>

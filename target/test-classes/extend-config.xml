@@ -1,0 +1,8 @@
+<extentreports>
+    <configuration>
+        <theme>standard</theme>
+        <encoding>UTF-8</encoding>
+        <documentTitle>Automation Test Report</documentTitle>
+        <reportName>Login Feature Report</reportName>
+    </configuration>
+</extentreports>

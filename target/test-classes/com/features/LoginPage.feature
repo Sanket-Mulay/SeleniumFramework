@@ -3,21 +3,21 @@ Feature: Login page feature
 
   Background:
   Given user is on login page
-
+@sanity
 Scenario: Login page title
   When user gets the title of the page
   Then page title should be "OrangeHRM"
-
+@smoke
 Scenario: Forgot Password link
   Then forgot your password link should be displayed
-
+@smoke
 Scenario: Login with correct credentials
   When user enters username "Admin"
   And user enters password "admin123"
   And user clicks on Login button
   Then user gets the title of the home page
   And page title should be "OrangeHRM"
-
+@smoke
 Scenario: Scroll down and up on Dashboard page
   When user enters username "Admin"
   And user enters password "admin123"
@@ -26,7 +26,7 @@ Scenario: Scroll down and up on Dashboard page
   And User scrolls up the dashboard page
   Then Dashboard page should be visible properly
   
-  
+  @regression 
   Scenario: Refresh the dashboard page
    When user enters username "Admin"
    And user enters password "admin123"

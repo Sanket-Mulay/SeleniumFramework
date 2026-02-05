@@ -26,6 +26,7 @@ public class AlarmPage {
 	//2. Constructors of the page class
 	public AlarmPage(WebDriver driver) {
 		  this.wait = new WebDriverWait(driver, Duration.ofSeconds(15)); // ✅ VERY IMPORTANT
+		 
 		this.driver=driver;
 	}
 	

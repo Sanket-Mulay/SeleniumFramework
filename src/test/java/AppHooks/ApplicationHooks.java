@@ -31,31 +31,28 @@ public class ApplicationHooks {
     private WebDriver driver;
     private Properties prop;
     private ConfigReader configReader;
+    
+    @Before(value="skip_scenario")
+    public void skip_scenario(Scenario scenario) {
+    	System.out.println("Skipped Scenario"+scenario.getName());
+    	
+    	
+    }
 
     // ✅ Cucumber Before hook (NOT @BeforeClass)
-    @Before(order = 0)
+    @Before(order = 1)
     public void getProperty() throws IOException {
         configReader = new ConfigReader();
         prop = configReader.init_prop();
     }
 
-    @Before(order = 1)
+    @Before(order = 2)
     public void launchBrowser() {
         String browserName = prop.getProperty("browser");
         driverFactory = new DriverFactory();
         driver = driverFactory.init_driver(browserName); // ✅ assign driver
     }
-/*
-    @Before(order = 1)
-    public void launchBrowser() {
-        driverFactory = new DriverFactory();
-        String browserName = BrowserContext.getBrowser();
-        if (browserName == null || browserName.isEmpty()) {
-            browserName = prop.getProperty("browser", "chrome");
-        }
-        driverFactory.init_driver(browserName);
-    }
-*/
+
     @After
     public void tearDown(Scenario scenario) {
 
@@ -111,7 +108,7 @@ public class ApplicationHooks {
                 System.out.println("❌ Screenshot capture failed: " + e.getMessage());
             } finally {
                 // ✅ Quit browser AFTER screenshot
-              driver.quit();
+              //driver.quit();
             }
         }
     }

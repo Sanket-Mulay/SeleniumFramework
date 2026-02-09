@@ -108,7 +108,7 @@ public class ApplicationHooks {
                 System.out.println("❌ Screenshot capture failed: " + e.getMessage());
             } finally {
                 // ✅ Quit browser AFTER screenshot
-              //driver.quit();
+              driver.quit();
             }
         }
     }

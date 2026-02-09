@@ -1,6 +1,7 @@
 package com.pages;
 
 import java.time.Duration;
+import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
@@ -11,6 +12,9 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
+
+
 
 public class AdminPage {
 
@@ -38,9 +42,12 @@ public class AdminPage {
     //Role Dropdown
     private By userRoleDropdown =
             By.xpath("//label[text()='User Role']/ancestor::div[contains(@class,'oxd-input-group')]//div[contains(@class,'oxd-select-text-input')]");
-
+//Admin option
     private By adminRoleOption =
             By.xpath("//div[@role='option']//span[text()='Admin']");
+ // ESS option
+    private By essRoleOption =
+            By.xpath("//div[@role='option']//span[normalize-space()='ESS']");
     
     private  By searchUserRole = By.xpath("//div[@class='oxd-select-text-input' and normalize-space()='-- Select --']\n");
     private By userNameInput = By.xpath("//*[@id=\"app\"]/div[1]/div[2]/div[2]/div/div[1]/div[2]/form/div[1]/div/div[3]/div/div[2]/div/div/input");
@@ -72,6 +79,8 @@ By.xpath("//div[@class='oxd-table-body']//div[@role='row']");
 private By noRecordsFound =
 By.xpath("//span[normalize-space()='No Records Found']");
 
+
+private By norecordmess=By.xpath("//*[@id=\"app\"]/div[1]/div[2]/div[2]/div/div[2]/div[2]/div/span");
 
 
 
@@ -163,6 +172,55 @@ By.xpath("//span[normalize-space()='No Records Found']");
 	}
     
     
+  
+  //invalid username entred
+  
+  public void invalid_usernmae(String usernamm) {
+
+  	WebElement username = wait.until(
+  	        ExpectedConditions.elementToBeClickable(usernameField)
+  	    );
+  	username.click();
+  	    username.clear();
+  	    username.sendKeys(usernamm);
+  	
+
+   
+ 
+  }
+  
+
+  
+  //username invalid message shown
+  
+  public void userNotFound() {
+	  WebElement noRecordMsg = wait.until(
+		        ExpectedConditions.visibilityOfElementLocated(noRecordsFound)
+		);
+
+		String actualText = noRecordMsg.getText().trim();
+
+		// ✅ Validate message manually
+		if (!"No Records Found".equals(actualText)) {
+		    throw new RuntimeException(
+		        "Expected 'No Records Found' message but found: " + actualText
+		    );
+		}
+
+		// ✅ Validate table has no rows
+		List<WebElement> rows = driver.findElements(
+		        By.cssSelector(".oxd-table-body .oxd-table-row")
+		);
+
+		if (!rows.isEmpty()) {
+		    throw new RuntimeException(
+		        "User records are still displayed in table. Row count: " + rows.size()
+		    );
+		}
+		
+		}
+
+
 
 public void login(String username, String passwordd) {
 	 WebElement userField =
@@ -177,6 +235,26 @@ public void login(String username, String passwordd) {
 		        wait.until(ExpectedConditions.elementToBeClickable(signInButton));
 		    loginBtn.click();
 		}
+
+
+//invalid userrole
+
+
+public void InvalidUserRole() {
+	// Click dropdown
+    WebElement dropdown = wait.until(
+            ExpectedConditions.elementToBeClickable(userRoleDropdown)
+    );
+    dropdown.click();
+
+    // Select Admin role
+    WebElement adminOption = wait.until(
+            ExpectedConditions.elementToBeClickable(essRoleOption)
+    );
+    adminOption.click();
+	
+}
+
 }
 
 

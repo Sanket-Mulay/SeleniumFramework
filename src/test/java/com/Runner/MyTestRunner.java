@@ -26,7 +26,7 @@ import io.cucumber.testng.CucumberOptions;
 */
 
 @CucumberOptions(
-        features = "src/test/resources/com/features",
+        features = "src/test/resources/com/features/Admin.feature",
         glue = {"stepdefination", "AppHooks"},
        // tags=("@sanity"),
         plugin = {

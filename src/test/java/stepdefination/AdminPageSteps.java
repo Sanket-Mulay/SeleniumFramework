@@ -1,5 +1,11 @@
 package stepdefination;
 
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Wait;
 import org.testng.Assert;
 
 import com.pages.AdminPage;
@@ -74,7 +80,7 @@ public void enter_valid_user_role() {
 
 @When("Search User Name")
 public void search_user_name() {
-	adminPage.selectUserFromAutoSuggestion("jia and razzaq");
+	adminPage.selectUserFromAutoSuggestion("Parneet Kaur user");
 }
 
 @When("Enter User Status")
@@ -98,7 +104,29 @@ public void user_should_see_matching_user_record() {
 	            "Matching user record is NOT displayed"
 	    );
 	
- 
+ //invalid usernmae 
+}
+
+@When("User enters invalid Username {string}")
+public void user_enters_invalid_username(String username) {
+	
+	adminPage.enterUsername(username);
+	
+	
+   
+}
+
+@Then("No Records Found message should be displayed")
+public void no_records_found_message_should_be_displayed() {
+	adminPage.userNotFound();
+	
+
+}
+//ivalid user role
+
+@When("Enter in-valid User Role")
+public void enter_in_valid_user_role() {
+  adminPage.InvalidUserRole();
 }
 
 }

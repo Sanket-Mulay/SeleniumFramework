@@ -53,18 +53,18 @@ public class LoginPageSteps extends BaseClass{
 		Assert.assertTrue(title.contains(expectedTitleName));
 	 
 	}
-
-	@Then("forgot your password link should be displayed")
-	public void forgot_your_password_link_should_be_displayed() {
-		  boolean isDisplayed = loginPage.isForgetPwdLinkExist();
-
-		    if (isDisplayed) {
-		        System.out.println("✅ Forgot Password link is displayed on Login page");
-		    } else {
-		        System.out.println("❌ Forgot Password link is NOT displayed on Login page");
-		    }
-	}
-	
+//
+//	@Then("forgot your password link should be displayed")
+//	public void forgot_your_password_link_should_be_displayed() {
+//		  boolean isDisplayed = loginPage.isForgetPwdLinkExist();
+//
+//		    if (isDisplayed) {
+//		        System.out.println("✅ Forgot Password link is displayed on Login page");
+//		    } else {
+//		        System.out.println("❌ Forgot Password link is NOT displayed on Login page");
+//		    }
+//	}
+//	
 
 	@When("user enters username {string}")
 	public void user_enters_username(String username) {

@@ -12,12 +12,15 @@ import com.pages.AdminPage;
 import com.pages.AlarmPage;
 import com.pages.PunchInOutPage;
 import com.qa.factory.DriverFactory;
+import com.qa.utill.WaitUtils;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
 public class AdminPageSteps extends BaseClass{
+	
+	private WaitUtils wait;
 	
 	private AdminPage adminPage=new AdminPage(DriverFactory.getDriver());
 	//private PunchInOutPage punchInPage=new PunchInOutPage(DriverFactory.getDriver());
@@ -32,6 +35,10 @@ public void user_is_on_login_page() {
 	DriverFactory.getDriver().get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
 	// 3. Initialize Page Object
 	adminPage = new AdminPage(driver);
+	  // 🔥 WAIT FOR LOGIN PAGE TO BE READY
+//    wait.until(ExpectedConditions.visibilityOfElementLocated(
+//        By.cssSelector("div.orangehrm-login-container")
+//    ));
 
   
 

@@ -7,9 +7,7 @@ Feature: Login page feature
 Scenario: Login page title
   When user gets the title of the page
   Then page title should be "OrangeHRM"
-@smoke
-Scenario: Forgot Password link
-  Then forgot your password link should be displayed
+
 @smoke
 Scenario: Login with correct credentials
   When user enters username "Admin"

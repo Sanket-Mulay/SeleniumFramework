@@ -31,7 +31,10 @@ public class AdminPage {
 		private By emailid = By.name("username"); // username input
 		private By password = By.name("password"); // password input
 		private By signInButton = By.cssSelector("button.orangehrm-login-button"); // login but
-  
+		
+		
+		private By loginContainer =
+			    By.cssSelector("div.orangehrm-login-container");
 		
 		// Locators 
     By adminMenu = By.xpath("//span[normalize-space()='Admin']");

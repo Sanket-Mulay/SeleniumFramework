@@ -26,7 +26,7 @@ import io.cucumber.testng.CucumberOptions;
 */
 
 @CucumberOptions(
-        features = "src/test/resources/com/features/Admin.feature",
+        features = "src/test/resources/com/features/LoginPage.feature",
         glue = {"stepdefination", "AppHooks"},
        // tags=("@sanity"),
         plugin = {
@@ -75,10 +75,10 @@ import io.cucumber.testng.CucumberOptions;
 //     * @return cucumber scenarios to run in parallel
 //     */
 	
-	@Override
-	@DataProvider(parallel = true)
-	public Object[][] scenarios() {
-	    return super.scenarios();
-	}
+//	@Override
+//	@DataProvider(parallel = true)
+//	public Object[][] scenarios() {
+//	    return super.scenarios();
+	//}
 
 }

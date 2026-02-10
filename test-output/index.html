@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Default_suite" class="navigator-link">
-              <span class="suite-name border-failed">Default suite</span>
+              <span class="suite-name border-passed">Default suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,21 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods, 1 failed,   2 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
-                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Default_suite">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.Runner.MyTestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Search user by invalid Username&quot;, &quot;User Search Functionality&quot;)">runScenario("Search user by invalid Username", "User Search Functionality")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Default_suite -->
+                    <span class="method-stats">3 methods,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -117,12 +103,17 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.Runner.MyTestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Search user by invalid Username&quot;, &quot;User Search Functionality&quot;)">runScenario("Search user by invalid Username", "User Search Functionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Default_suite" title="com.Runner.MyTestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Search user by valid credentials&quot;, &quot;User Search Functionality&quot;)">runScenario("Search user by valid credentials", "User Search Functionality")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.Runner.MyTestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Search user by invalid Username&quot;, &quot;User Search Functionality&quot;)">runScenario("Search user by invalid Username", "User Search Functionality")</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="com.Runner.MyTestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Search user by invalid User Role&quot;, &quot;User Search Functionality&quot;)">runScenario("Search user by invalid User Role", "User Search Functionality")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -137,9 +128,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-failed">
+          <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
+              <img src="passed.png"/>
               <span class="class-name">com.Runner.MyTestRunner</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -149,31 +140,10 @@
                   </a> <!-- runScenario("Search user by invalid Username", "User Search Functionality") -->
                   <span class="method-name">runScenario</span>
                   <span class="parameters">("Search user by invalid Username","User Search Functionality")</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //div[@role=&apos;option&apos;]//span[contains(text(),&apos;Parneet Kaur user&apos;)] (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
-System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;26.2&apos;, java.version: &apos;21.0.9&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.133, chrome: {chromedriverVersion: 144.0.7559.133 (7da823b1d59..., userDataDir: /var/folders/gm/j9jmyw7x3mb...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61468}, goog:processID: 96064, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:61468/devtoo..., se:cdpVersion: 144.0.7559.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 78e717dfe82959144fb796f0ccc4073c
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at com.pages.AdminPage.selectUserFromAutoSuggestion(AdminPage.java:133)
-	at stepdefination.AdminPageSteps.search_user_name(AdminPageSteps.java:83)
-	at ✽.Search User Name(file:///Users/sanketmulay/Cucumber_Framework/OrangeHRM_Automation/src/test/resources/com/features/Admin.feature:23)
-
-</div> <!-- stack-trace -->
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-failed -->
-          <div class="suite-Default_suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.Runner.MyTestRunner</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
                   <a name="runScenario(&quot;Search user by valid credentials&quot;, &quot;User Search Functionality&quot;)">
@@ -186,10 +156,10 @@ Session ID: 78e717dfe82959144fb796f0ccc4073c
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;Search user by invalid Username&quot;, &quot;User Search Functionality&quot;)">
-                  </a> <!-- runScenario("Search user by invalid Username", "User Search Functionality") -->
+                  <a name="runScenario(&quot;Search user by invalid User Role&quot;, &quot;User Search Functionality&quot;)">
+                  </a> <!-- runScenario("Search user by invalid User Role", "User Search Functionality") -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("Search user by invalid Username","User Search Functionality")</span>
+                  <span class="parameters">("Search user by invalid User Role","User Search Functionality")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
@@ -199,7 +169,7 @@ Session ID: 78e717dfe82959144fb796f0ccc4073c
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/private/var/folders/gm/j9jmyw7x3mb3t067txqjqtr80000gn/T/testng-eclipse-372032264/testng-customsuite.xml</span>
+            <span class="header-content">/private/var/folders/gm/j9jmyw7x3mb3t067txqjqtr80000gn/T/testng-eclipse--433937876/testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -260,15 +230,15 @@ data.addRows(3);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'runScenario')
 data.setCell(0, 2, 'com.Runner.MyTestRunner')
-data.setCell(0, 3, 38827);
+data.setCell(0, 3, 38255);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'runScenario')
 data.setCell(1, 2, 'com.Runner.MyTestRunner')
-data.setCell(1, 3, 35571);
+data.setCell(1, 3, 38247);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'runScenario')
 data.setCell(2, 2, 'com.Runner.MyTestRunner')
-data.setCell(2, 3, 33005);
+data.setCell(2, 3, 37881);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
@@ -301,26 +271,24 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">com.Runner.MyTestRunner</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setUpClass(org.testng.TestRunner@6daf2337)</span>
+                <span class="method-name">setUpClass(org.testng.TestRunner@49601f82)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">runScenario("Search user by invalid Username", "User Search Functionality")</span>
-                <span class="method-start">227 ms</span>
+                <span class="method-start">221 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("Search user by valid credentials", "User Search Functionality")</span>
-                <span class="method-start">227 ms</span>
+                <span class="method-start">221 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">runScenario("Search user by invalid Username", "User Search Functionality")</span>
-                <span class="method-start">227 ms</span>
+                <span class="method-name">runScenario("Search user by invalid User Role", "User Search Functionality")</span>
+                <span class="method-start">221 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">39056 ms</span>
+                <span class="method-start">38477 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

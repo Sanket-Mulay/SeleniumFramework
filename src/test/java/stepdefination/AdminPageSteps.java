@@ -80,7 +80,7 @@ public void enter_valid_user_role() {
 
 @When("Search User Name")
 public void search_user_name() {
-	adminPage.selectUserFromAutoSuggestion("Parneet Kaur user");
+	adminPage.selectUserFromAutoSuggestion("mandaTeja akhil user");
 }
 
 @When("Enter User Status")

@@ -8,7 +8,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class AlarmPage {
+public class DashboardPage {
 
 	private WebDriverWait wait;
 	private WebDriver driver;
@@ -17,26 +17,29 @@ public class AlarmPage {
 		private By emailid = By.name("username"); // username input
 		private By password = By.name("password"); // password input
 		private By signInButton = By.cssSelector("button.orangehrm-login-button"); // login but
-	//click on Alarm logo
-	private By AlarmClick = By.xpath("//button[@class='oxd-icon-button oxd-icon-button--solid-main orangehrm-attendance-card-action']");
 	
-	
-	
+		
+		 // Dashboard locators
+	    private By dashboardHeader = By.xpath("//h6[text()='Dashboard']");
+	    private By dashboardTitle = By.xpath("//span[text()='Dashboard']");
+		
 
 	//2. Constructors of the page class
-	public AlarmPage(WebDriver driver) {
+	public DashboardPage(WebDriver driver) {
 		  this.wait = new WebDriverWait(driver, Duration.ofSeconds(15)); // ✅ VERY IMPORTANT
-		 
 		this.driver=driver;
 	}
 	
 	
+	  // Verify Dashboard page loaded
+    public boolean isDashboardDisplayed() {
+        return wait.until(ExpectedConditions.visibilityOfElementLocated(dashboardHeader)).isDisplayed();
+    }
 
-//click on Alarm 
-public void clickOnAlarm() {
-	  WebElement AlarmButtonTabON = wait.until(ExpectedConditions.visibilityOfElementLocated(AlarmClick));
-	  AlarmButtonTabON.click();
-}
+    // Verify Dashboard title
+    public boolean isDashboardTitleVisible() {
+        return wait.until(ExpectedConditions.visibilityOfElementLocated(dashboardTitle)).isDisplayed();
+    }
 
 
 

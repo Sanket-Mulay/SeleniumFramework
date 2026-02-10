@@ -9,7 +9,7 @@ import org.openqa.selenium.support.ui.Wait;
 import org.testng.Assert;
 
 import com.pages.AdminPage;
-import com.pages.AlarmPage;
+import com.pages.DashboardPage;
 import com.pages.PunchInOutPage;
 import com.qa.factory.DriverFactory;
 import com.qa.utill.WaitUtils;

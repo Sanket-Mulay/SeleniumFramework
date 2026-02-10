@@ -1,27 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-02-09T13:53:38 IST" name="Default suite" finished-at="2026-02-09T13:54:21 IST" duration-ms="42241">
+  <suite started-at="2026-02-10T13:05:56 IST" name="Default suite" finished-at="2026-02-10T13:06:57 IST" duration-ms="61435">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.MyTestRunner@4b2bac3f]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2026-02-09T13:53:38 IST" name="Default test" finished-at="2026-02-09T13:54:21 IST" duration-ms="42241">
+    <test started-at="2026-02-10T13:05:56 IST" name="Default test" finished-at="2026-02-10T13:06:57 IST" duration-ms="61435">
       <class name="com.Runner.MyTestRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.Runner.MyTestRunner@4b2bac3f]" started-at="2026-02-09T13:53:38 IST" name="setUpClass" finished-at="2026-02-09T13:53:39 IST" duration-ms="221" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.Runner.MyTestRunner@4b2bac3f]" started-at="2026-02-10T13:05:56 IST" name="setUpClass" finished-at="2026-02-10T13:05:56 IST" duration-ms="217" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@6daf2337]]>
+                <![CDATA[org.testng.TestRunner@49601f82]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.MyTestRunner@4b2bac3f]" started-at="2026-02-09T13:53:39 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-02-09T13:54:12 IST" duration-ms="33005" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.MyTestRunner@4b2bac3f]" started-at="2026-02-10T13:05:56 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-02-10T13:06:34 IST" duration-ms="37881" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Search user by invalid Username"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["User Search Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.MyTestRunner@4b2bac3f]" started-at="2026-02-10T13:05:56 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-02-10T13:06:34 IST" duration-ms="38247" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -37,11 +53,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.MyTestRunner@4b2bac3f]" started-at="2026-02-09T13:53:39 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-02-09T13:54:14 IST" duration-ms="35571" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.MyTestRunner@4b2bac3f]" started-at="2026-02-10T13:05:56 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-02-10T13:06:34 IST" duration-ms="38255" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Search user by invalid Username"]]>
+                <![CDATA["Search user by invalid User Role"]]>
               </value>
             </param>
             <param index="1">
@@ -53,47 +69,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.MyTestRunner@4b2bac3f]" started-at="2026-02-09T13:53:39 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-02-09T13:54:17 IST" duration-ms="38827" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Search user by invalid Username"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["User Search Functionality"]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for element to be clickable: By.xpath: //div[@role='option']//span[contains(text(),'Parneet Kaur user')] (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: '4.21.0', revision: '79ed462ef4'
-System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '26.2', java.version: '21.0.9'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.133, chrome: {chromedriverVersion: 144.0.7559.133 (7da823b1d59..., userDataDir: /var/folders/gm/j9jmyw7x3mb...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61468}, goog:processID: 96064, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:61468/devtoo..., se:cdpVersion: 144.0.7559.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 78e717dfe82959144fb796f0ccc4073c]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //div[@role='option']//span[contains(text(),'Parneet Kaur user')] (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: '4.21.0', revision: '79ed462ef4'
-System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '26.2', java.version: '21.0.9'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.133, chrome: {chromedriverVersion: 144.0.7559.133 (7da823b1d59..., userDataDir: /var/folders/gm/j9jmyw7x3mb...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61468}, goog:processID: 96064, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:61468/devtoo..., se:cdpVersion: 144.0.7559.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 78e717dfe82959144fb796f0ccc4073c
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-at com.pages.AdminPage.selectUserFromAutoSuggestion(AdminPage.java:133)
-at stepdefination.AdminPageSteps.search_user_name(AdminPageSteps.java:83)
-at ✽.Search User Name(file:///Users/sanketmulay/Cucumber_Framework/OrangeHRM_Automation/src/test/resources/com/features/Admin.feature:23)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.Runner.MyTestRunner@4b2bac3f]" started-at="2026-02-09T13:54:17 IST" name="tearDownClass" finished-at="2026-02-09T13:54:21 IST" duration-ms="3173" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.Runner.MyTestRunner@4b2bac3f]" started-at="2026-02-10T13:06:34 IST" name="tearDownClass" finished-at="2026-02-10T13:06:57 IST" duration-ms="22949" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

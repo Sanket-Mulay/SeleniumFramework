@@ -1,0 +1,9 @@
+<suite name="OrangeHRM Suite">
+    
+    <test name="Cucumber Test">
+        <classes>
+            <class name="runner.TestRunner"/>
+        </classes>
+    </test>
+
+</suite>

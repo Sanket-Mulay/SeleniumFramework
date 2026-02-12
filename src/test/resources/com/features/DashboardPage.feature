@@ -1,3 +1,4 @@
+@Dashboard
 Feature: Dashboard Page Verification
 
   Background:

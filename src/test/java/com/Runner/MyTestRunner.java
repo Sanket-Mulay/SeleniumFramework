@@ -31,7 +31,7 @@ import io.cucumber.testng.CucumberOptions;
         		//"src/test/resources/com/features/EmployeeOnLeaveConfiguration.feature",
         
         glue = {"stepdefination", "AppHooks"},
-       // tags=("@sanity"),
+       tags=("@LeaveConfiguration"),
         plugin = {
                 "pretty",
                "html:target/cucumber-reports/cucumber.html",

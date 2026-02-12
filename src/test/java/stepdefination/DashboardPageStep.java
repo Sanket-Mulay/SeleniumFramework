@@ -4,6 +4,7 @@ import com.pages.LoginPage;
 import com.pages.PunchInOutPage;
 import com.qa.factory.DriverFactory;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 
@@ -51,4 +52,30 @@ public void dashboard_title_should_be_visible() {
                "Dashboard title is NOT visible"
        );
 }
+
+
+//scroll down and up scenario
+
+@When("user scrolls down the Dashboard page")
+public void user_scrolls_down_the_dashboard_page() {
+	 JavascriptExecutor js = (JavascriptExecutor) driver;
+	    js.executeScript("window.scrollTo(0, document.body.scrollHeight)");
+	
+
+}
+@When("user scrolls up the Dashboard page")
+public void user_scrolls_up_the_dashboard_page() {
+    JavascriptExecutor js = (JavascriptExecutor) driver;
+    js.executeScript("window.scrollTo(0, 0)");
+   
+}
+@Then("Dashboard page should remain visible")
+public void dashboard_page_should_remain_visible() {
+	Assert.assertTrue(
+            dashboardPage.isDashboardTitleVisible(),
+            "Dashboard title is NOT visible"
+    );
+
+}
+
 }

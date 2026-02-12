@@ -20,7 +20,7 @@ public class DashboardPage {
 	
 		
 		 // Dashboard locators
-	    private By dashboardHeader = By.xpath("//h6[text()='Dashboard']");
+	    private By dashboardHeader = By.xpath("//*[@id=\"app\"]/div[1]/div[1]/header/div[1]/div[1]/span/h6");
 	    private By dashboardTitle = By.xpath("//span[text()='Dashboard']");
 		
 

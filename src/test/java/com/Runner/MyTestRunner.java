@@ -12,7 +12,7 @@ import io.cucumber.testng.CucumberOptions;
 import io.cucumber.testng.CucumberOptions;
 /*
 @CucumberOptions(
-	    features = "src/test/resources/com/features/LoginPage.feature",
+	    features = "src/test/resources/com/features/EmployeesOnLeaveConfiguration..feature",
 	    glue = {"stepdefination","AppHooks"},   // ✅ EXACT package name
 	   
         plugin = {
@@ -26,7 +26,10 @@ import io.cucumber.testng.CucumberOptions;
 */
 
 @CucumberOptions(
-        features = "src/test/resources/com/features/DashboardPage.feature",
+        features =   "src/test/resources/com/features/EmployeesOnLeaveConfiguration.feature",
+              // "src/test/resources/com/features/LoginPage.feature"},
+        		//"src/test/resources/com/features/EmployeeOnLeaveConfiguration.feature",
+        
         glue = {"stepdefination", "AppHooks"},
        // tags=("@sanity"),
         plugin = {

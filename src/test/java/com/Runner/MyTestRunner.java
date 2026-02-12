@@ -26,13 +26,13 @@ import io.cucumber.testng.CucumberOptions;
 */
 
 @CucumberOptions(
-        features =   "src/test/resources/com/features/feature",
+        features =   "src/test/resources/com/features",
               // "src/test/resources/com/features/LoginPage.feature"},
         		//"src/test/resources/com/features/EmployeeOnLeaveConfiguration.feature",
         
         glue = {"stepdefination", "AppHooks"},
-        		 tags = "@login or @LeaveConfiguration or @Dashboard",
-        plugin = {
+        		 tags = "@Login or @Dashboard or @LeaveConfiguration",
+        		 plugin = {
                 "pretty",
                "html:target/cucumber-reports/cucumber.html",
                 "json:target/cucumber-reports/cucumber.json",

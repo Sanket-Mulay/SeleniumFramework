@@ -26,7 +26,7 @@ import io.cucumber.testng.CucumberOptions;
 */
 
 @CucumberOptions(
-        features =   "src/test/resources/com/features/EmployeesOnLeaveConfiguration.feature",
+        features =   "src/test/resources/com/features/feature",
               // "src/test/resources/com/features/LoginPage.feature"},
         		//"src/test/resources/com/features/EmployeeOnLeaveConfiguration.feature",
         

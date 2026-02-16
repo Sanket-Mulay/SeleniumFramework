@@ -12,11 +12,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
 public class EmployeeOnLeaveConfiguration{
- 
-	
-	
-	
-	
+
 
 	private EmployeesOnLeaveConfigPage employeesOnLeaveConfigPage=new EmployeesOnLeaveConfigPage(DriverFactory.getDriver());
 	private DashboardPage dashboardPage=new DashboardPage(DriverFactory.getDriver());
@@ -101,11 +97,47 @@ public void configuration_popup_should_be_closed() {
 public void success_message_should_be_displayed() {
 	Assert.assertTrue(employeesOnLeaveConfigPage.isSuccess(),"this is success message can't found");
 	
+
+}
+
+
+
+// Verify Employees on Leave Today configuration popup opens and closes successfull
+@When("User clicks on the close icon on the popup")
+public void user_clicks_on_the_close_icon_on_the_popup() {
 	
+	employeesOnLeaveConfigPage.closebutton();
+
+}
+@Then("Configuration popup should close successfully")
+public void configuration_popup_should_close_successfully() {
+	  boolean status = employeesOnLeaveConfigPage.isclosesucccessfullyPopup();
+	    Assert.assertTrue(status);
+   
+}
+@Then("User should remain on the Dashboard page")
+public void user_should_remain_on_the_dashboard_page() {
+
+    boolean status = employeesOnLeaveConfigPage.DashboardPavetitle();
+    Assert.assertTrue(status);
 	
-	
+    
+}
+
+//tab cancel button tab wihuout selecting toggle
+@When("User clicks on cancel button")
+public void user_clicks_on_cancel_button() {
+	  employeesOnLeaveConfigPage.ispopupClosed();
+
+  
+}
+
+@Then("User clicks on Save buttons")
+public void user_clicks_on_save_buttons() {
+	employeesOnLeaveConfigPage.isTabOnSaveButton();
  
 }
+
 
 
 }

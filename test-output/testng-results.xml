@@ -1,47 +1,111 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-02-12T17:25:27 IST" name="Default suite" finished-at="2026-02-12T17:26:11 IST" duration-ms="43901">
+  <suite started-at="2026-02-16T12:29:59 IST" name="Default suite" finished-at="2026-02-16T12:33:04 IST" duration-ms="184445">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.FiledRun@f6efaab]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.MyTestRunner@f6efaab]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2026-02-12T17:25:27 IST" name="Default test" finished-at="2026-02-12T17:26:11 IST" duration-ms="43901">
-      <class name="com.Runner.FiledRun">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.Runner.FiledRun@f6efaab]" started-at="2026-02-12T17:25:27 IST" name="setUpClass" finished-at="2026-02-12T17:25:27 IST" duration-ms="200" status="PASS">
+    <test started-at="2026-02-16T12:29:59 IST" name="Default test" finished-at="2026-02-16T12:33:04 IST" duration-ms="184445">
+      <class name="com.Runner.MyTestRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.Runner.MyTestRunner@f6efaab]" started-at="2026-02-16T12:29:59 IST" name="setUpClass" finished-at="2026-02-16T12:30:00 IST" duration-ms="246" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@80b122b]]>
+                <![CDATA[org.testng.TestRunner@c5a2d5]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.FiledRun@f6efaab]" started-at="2026-02-12T17:25:27 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-02-12T17:26:08 IST" duration-ms="40966" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.MyTestRunner@f6efaab]" started-at="2026-02-16T12:30:00 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-02-16T12:30:31 IST" duration-ms="31733" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Login with multiple different credentials"]]>
+                <![CDATA["Verify Employees on Leave Today configuration popup opens successfully"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Login page feature"]]>
+                <![CDATA["Employees on Leave Today Configuration"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.Runner.FiledRun@f6efaab]" started-at="2026-02-12T17:26:08 IST" name="tearDownClass" finished-at="2026-02-12T17:26:11 IST" duration-ms="2714" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.MyTestRunner@f6efaab]" started-at="2026-02-16T12:30:31 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-02-16T12:31:03 IST" duration-ms="31100" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify Employees on Leave Today configuration popup opens and closes successfully"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Employees on Leave Today Configuration"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.MyTestRunner@f6efaab]" started-at="2026-02-16T12:31:03 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-02-16T12:31:51 IST" duration-ms="48391" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify user can enable accessible employees toggle and save"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Employees on Leave Today Configuration"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.MyTestRunner@f6efaab]" started-at="2026-02-16T12:31:51 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-02-16T12:32:32 IST" duration-ms="41486" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify user can save configuration without selecting toggle statee"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Employees on Leave Today Configuration"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.MyTestRunner@f6efaab]" started-at="2026-02-16T12:32:32 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-02-16T12:33:00 IST" duration-ms="27899" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify user can cancel configuration without selecting toggle statee"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Employees on Leave Today Configuration"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.Runner.MyTestRunner@f6efaab]" started-at="2026-02-16T12:33:00 IST" name="tearDownClass" finished-at="2026-02-16T12:33:04 IST" duration-ms="3564" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
-      </class> <!-- com.Runner.FiledRun -->
+      </class> <!-- com.Runner.MyTestRunner -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

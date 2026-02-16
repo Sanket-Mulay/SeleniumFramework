@@ -39,10 +39,15 @@ public class EmployeesOnLeaveConfigPage {
 
     @FindBy(xpath = "//*[@id=\"app\"]/div[1]/div[2]/div[2]/div/div[5]/div[2]/div/div/div/div/div/p[2]")
     WebElement configurationPopup;
+    @FindBy(xpath ="//*[@id=\"app\"]/div[1]/div[2]/div[2]/div/div[5]/div/div[1]/div/p")
+    WebElement popupCLoseSuccessfully;
     
     
 
- 
+//close popup button
+    
+    @FindBy(xpath = "//*[@id=\"app\"]/div[1]/div[2]/div[2]/div/div[5]/div[2]/div/div/div/button")
+    WebElement isCloseButton;
 
     @FindBy(xpath = "//label[contains(.,'Only show accessible employees on leave for other users')]")
     WebElement toggleLabel;
@@ -53,6 +58,11 @@ public class EmployeesOnLeaveConfigPage {
     
     @FindBy(xpath="//button[@type='submit']")
     WebElement saveButton;
+    
+    @FindBy(xpath="//*[@id=\"app\"]/div[1]/div[2]/div[2]/div/div[5]/div[2]/div/div/div/form/div[2]/button[2]")
+    WebElement saveButtonss;
+    
+    
     
     @FindBy(xpath="//div[contains(@class,'oxd-toast')]\n")
     WebElement successMessage;
@@ -92,6 +102,17 @@ public class EmployeesOnLeaveConfigPage {
         return popupTitle.getText();
     }
 
+    public boolean DashboardPavetitle() {
+    	  wait.until(ExpectedConditions.visibilityOf(dashboardTitle));
+    	    return dashboardTitle.isDisplayed();
+    }
+    
+
+    public void closebutton() {
+    	
+    	wait.until(ExpectedConditions.visibilityOf(isCloseButton));
+    	isCloseButton.click();
+    }
     public boolean isToggleVisible() {
         wait.until(ExpectedConditions.visibilityOf(toggleLabel));
         return toggleLabel.isDisplayed();
@@ -111,40 +132,7 @@ public class EmployeesOnLeaveConfigPage {
             toggle.click();
         }
         
-    	/*
-    	  WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
-
-    	    // Wait for popup to exist AND fully visible
-    	    WebElement popup = wait.until(driver -> {
-    	        try {
-    	            WebElement dialog = driver.findElement(By.xpath("//div[@role='dialog']"));
-    	            if (dialog.isDisplayed() && dialog.getCssValue("opacity").equals("1")) {
-    	                return dialog;
-    	            }
-    	            return null; // keep waiting
-    	        } catch (NoSuchElementException e) {
-    	            return null; // keep waiting
-    	        }
-    	    });
-
-    	    // Find the toggle specifically inside the popup
-    	    WebElement toggle = wait.until(ExpectedConditions.elementToBeClickable(
-    	            popup.findElement(By.cssSelector("input.oxd-switch-input"))
-    	    ));
-
-    	    // Enable toggle if not selected
-    	    if (!toggle.isSelected()) {
-    	        toggle.click();
-
-    	        // Wait until the toggle is actually selected — find fresh element inside the wait
-    	        wait.until(driver -> {
-    	            WebElement freshToggle = popup.findElement(By.cssSelector("input.oxd-switch-input"));
-    	            // Check either 'checked' attribute or 'aria-checked'
-    	            return "true".equals(freshToggle.getAttribute("aria-checked")) 
-    	                   || freshToggle.isSelected();
-    	        });
-    	    }
-    	    */
+    	
     	}
     
     
@@ -156,16 +144,30 @@ public class EmployeesOnLeaveConfigPage {
 
     
     public boolean ispopupClosed() {
-    	  wait.until(ExpectedConditions.visibilityOf(dashboardTitle));
-          return dashboardTitle.isDisplayed();
+    	 wait.until(ExpectedConditions.visibilityOf(dashboardTitle));
+     	return successMessage.isDisplayed();
+    	
       }
     
+    
+    public boolean isclosesucccessfullyPopup() {
+   	 wait.until(ExpectedConditions.visibilityOf(popupCLoseSuccessfully));
+    	return popupCLoseSuccessfully.isDisplayed();
+    	
+    }
     
     public boolean isSuccess() {
     	 wait.until(ExpectedConditions.visibilityOf(successMessage));
     	return successMessage.isDisplayed();
+
     	
+    }
+    
+    
+    public void isTabOnSaveButton() {
     	
+    	wait.until(ExpectedConditions.visibilityOf(saveButtonss));
+    	saveButtonss.click();
     }
     	
     }

@@ -15,7 +15,7 @@ Feature: Employees on Leave Today Configuration
     Then Configuration popup should be displayed
     And Toggle option "Only show accessible employees on leave for other users" should be visible
     
-
+ 
   Scenario: Verify Employees on Leave Today configuration popup opens and closes successfully
     When User clicks on Employees on Leave Today settings icon
     Then Configuration popup should be displayed
@@ -24,8 +24,7 @@ Feature: Employees on Leave Today Configuration
     Then Configuration popup should close successfully
     And User should remain on the Dashboard page
     
-    
-      @Regression 
+     
   Scenario: Verify user can enable accessible employees toggle and save
     When User clicks on Employees on Leave Today settings icon
     And User enables the accessible employees toggle
@@ -34,7 +33,7 @@ Feature: Employees on Leave Today Configuration
     And Success message should be displayed
     
         
-   
+ 
   Scenario:  Verify user can save configuration without selecting toggle statee
     When User clicks on Employees on Leave Today settings icon
     Then Configuration popup should be displayed
@@ -42,7 +41,7 @@ Feature: Employees on Leave Today Configuration
     Then Configuration popup should be closed
     And Success message should be displayed
     
-    @smoke
+    @regression
   Scenario:  Verify user can cancel configuration without selecting toggle statee
     When User clicks on Employees on Leave Today settings icon
     Then Configuration popup should be displayed

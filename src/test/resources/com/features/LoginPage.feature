@@ -4,7 +4,7 @@ Feature: Login page feature
 
   Background:
   Given user is on login page
-@sanity
+
 Scenario: Login page title
   When user gets the title of the page
   Then page title should be "OrangeHRM"
@@ -25,7 +25,7 @@ Scenario: Scroll down and up on Dashboard page
   And User scrolls up the dashboard page
   Then Dashboard page should be visible properly
   
-  @regression 
+   
   Scenario: Refresh the dashboard page
    When user enters username "Admin"
    And user enters password "admin123"

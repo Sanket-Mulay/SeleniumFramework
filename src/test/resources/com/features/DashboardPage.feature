@@ -17,3 +17,9 @@ Feature: Dashboard Page Verification
     And user scrolls up the Dashboard page
     Then Dashboard page should remain visible
     
+   
+    
+    
+    
+    
+    

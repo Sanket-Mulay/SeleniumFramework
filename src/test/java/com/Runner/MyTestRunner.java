@@ -10,20 +10,6 @@ import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 
 import io.cucumber.testng.CucumberOptions;
-/*
-@CucumberOptions(
-	    features = "src/test/resources/com/features/EmployeesOnLeaveConfiguration..feature",
-	    glue = {"stepdefination","AppHooks"},   // ✅ EXACT package name
-	   
-        plugin = {
-                "pretty",
-                "json:target/cucumber-reports/cucumber.json",
-                "html:target/cucumber-reports/cucumber.html"
-        },
-	    monochrome = true,
-	    publish = true //reprot ko publish kr ne keliye
-	)
-*/
 
 @CucumberOptions(
         features =   "src/test/resources/com/features",
@@ -31,7 +17,7 @@ import io.cucumber.testng.CucumberOptions;
         		//"src/test/resources/com/features/EmployeeOnLeaveConfiguration.feature",
         
         glue = {"stepdefination", "AppHooks"},
-        		 tags = "@LeaveConfiguration",
+        		 tags = "@KPIs",
         		 plugin = {
                 "pretty",
                "html:target/cucumber-reports/cucumber.html",

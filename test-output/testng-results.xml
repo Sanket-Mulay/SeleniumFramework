@@ -1,107 +1,123 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-02-16T12:29:59 IST" name="Default suite" finished-at="2026-02-16T12:33:04 IST" duration-ms="184445">
+  <suite started-at="2026-02-27T14:38:55 IST" name="Default suite" finished-at="2026-02-27T14:43:39 IST" duration-ms="284692">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.MyTestRunner@f6efaab]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2026-02-16T12:29:59 IST" name="Default test" finished-at="2026-02-16T12:33:04 IST" duration-ms="184445">
+    <test started-at="2026-02-27T14:38:55 IST" name="Default test" finished-at="2026-02-27T14:43:39 IST" duration-ms="284692">
       <class name="com.Runner.MyTestRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.Runner.MyTestRunner@f6efaab]" started-at="2026-02-16T12:29:59 IST" name="setUpClass" finished-at="2026-02-16T12:30:00 IST" duration-ms="246" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.Runner.MyTestRunner@f6efaab]" started-at="2026-02-27T14:38:55 IST" name="setUpClass" finished-at="2026-02-27T14:38:55 IST" duration-ms="236" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@c5a2d5]]>
+                <![CDATA[org.testng.TestRunner@12608986]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.MyTestRunner@f6efaab]" started-at="2026-02-16T12:30:00 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-02-16T12:30:31 IST" duration-ms="31733" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.MyTestRunner@f6efaab]" started-at="2026-02-27T14:38:55 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-02-27T14:40:00 IST" duration-ms="64757" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Verify Employees on Leave Today configuration popup opens successfully"]]>
+                <![CDATA["Verify KPI page is displayed after clicking on KPI under Performance"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Employees on Leave Today Configuration"]]>
+                <![CDATA["KPI Page Navigation"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.MyTestRunner@f6efaab]" started-at="2026-02-16T12:30:31 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-02-16T12:31:03 IST" duration-ms="31100" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.MyTestRunner@f6efaab]" started-at="2026-02-27T14:40:00 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-02-27T14:41:05 IST" duration-ms="65081" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Verify Employees on Leave Today configuration popup opens and closes successfully"]]>
+                <![CDATA["verify Key Performance Indicators for Job Title Successfully Button"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Employees on Leave Today Configuration"]]>
+                <![CDATA["KPI Page Navigation"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.MyTestRunner@f6efaab]" started-at="2026-02-16T12:31:03 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-02-16T12:31:51 IST" duration-ms="48391" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.MyTestRunner@f6efaab]" started-at="2026-02-27T14:41:05 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-02-27T14:41:51 IST" duration-ms="45694" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Verify user can enable accessible employees toggle and save"]]>
+                <![CDATA["verify search valid job title"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Employees on Leave Today Configuration"]]>
+                <![CDATA["KPI Page Navigation"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.MyTestRunner@f6efaab]" started-at="2026-02-16T12:31:51 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-02-16T12:32:32 IST" duration-ms="41486" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.MyTestRunner@f6efaab]" started-at="2026-02-27T14:41:51 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-02-27T14:42:28 IST" duration-ms="37347" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Verify user can save configuration without selecting toggle statee"]]>
+                <![CDATA["verify search valid without search job title"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Employees on Leave Today Configuration"]]>
+                <![CDATA["KPI Page Navigation"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.MyTestRunner@f6efaab]" started-at="2026-02-16T12:32:32 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-02-16T12:33:00 IST" duration-ms="27899" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.MyTestRunner@f6efaab]" started-at="2026-02-27T14:42:28 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-02-27T14:42:59 IST" duration-ms="30766" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Verify user can cancel configuration without selecting toggle statee"]]>
+                <![CDATA["verify reset button without search job title"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Employees on Leave Today Configuration"]]>
+                <![CDATA["KPI Page Navigation"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.Runner.MyTestRunner@f6efaab]" started-at="2026-02-16T12:33:00 IST" name="tearDownClass" finished-at="2026-02-16T12:33:04 IST" duration-ms="3564" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Runner.MyTestRunner@f6efaab]" started-at="2026-02-27T14:42:59 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-02-27T14:43:36 IST" duration-ms="36958" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["verify reset button with search job title"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["KPI Page Navigation"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.Runner.MyTestRunner@f6efaab]" started-at="2026-02-27T14:43:36 IST" name="tearDownClass" finished-at="2026-02-27T14:43:39 IST" duration-ms="3807" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

@@ -140,8 +140,9 @@ private By norecordmess=By.xpath("//*[@id=\"app\"]/div[1]/div[2]/div[2]/div/div[
         
     }
 
+    
+     
     public void selectStatus(String status) throws InterruptedException {
-
         // 1️⃣ Focus move using TAB
         Actions actions = new Actions(driver);
         actions.sendKeys(Keys.TAB).perform();
@@ -257,7 +258,6 @@ public void InvalidUserRole() {
     adminOption.click();
 	
 }
-
 }
 
 

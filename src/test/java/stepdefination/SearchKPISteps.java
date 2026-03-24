@@ -14,9 +14,11 @@ import io.cucumber.java.en.When;
 
 public class SearchKPISteps {
 
-	private	SearchKPIsDataPage searchKPIsDataPage=new SearchKPIsDataPage(DriverFactory.getDriver());
-	private DashboardPage dashboardPage=new DashboardPage(DriverFactory.getDriver());
+//	private	SearchKPIsDataPage searchKPIsDataPage=new SearchKPIsDataPage(DriverFactory.getDriver());
+	//private DashboardPage dashboardPage=new DashboardPage(DriverFactory.getDriver());
 	 private WebDriver driver;
+	 private DashboardPage dashboardPage;
+	 private SearchKPIsDataPage searchKPIsDataPage;
 	
 	
 	

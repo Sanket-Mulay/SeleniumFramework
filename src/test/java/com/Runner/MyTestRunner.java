@@ -12,12 +12,12 @@ import io.cucumber.testng.CucumberOptions;
 import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(
-        features =   "src/test/resources/com/features",
-              // "src/test/resources/com/features/LoginPage.feature"},
-        		//"src/test/resources/com/features/EmployeeOnLeaveConfiguration.feature",
+        features = //  "src/test/resources/com/features",
+        		//"OrangeHRM_Automation/src/test/resources/com/features/Trackers.feature",
+        	"src/test/resources/com/features/Trackers.feature",
         
         glue = {"stepdefination", "AppHooks"},
-        		 tags = "@KPIs",
+        		 tags = "@TrackersScenario",
         		 plugin = {
                 "pretty",
                "html:target/cucumber-reports/cucumber.html",

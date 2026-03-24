@@ -14,9 +14,12 @@ import io.cucumber.java.en.When;
 public class EmployeeOnLeaveConfiguration{
 
 
-	private EmployeesOnLeaveConfigPage employeesOnLeaveConfigPage=new EmployeesOnLeaveConfigPage(DriverFactory.getDriver());
-	private DashboardPage dashboardPage=new DashboardPage(DriverFactory.getDriver());
+	//private EmployeesOnLeaveConfigPage employeesOnLeaveConfigPage=new EmployeesOnLeaveConfigPage(DriverFactory.getDriver());
+	//private DashboardPage dashboardPage=new DashboardPage(DriverFactory.getDriver());
 	 private WebDriver driver;
+	 
+	 private EmployeesOnLeaveConfigPage employeesOnLeaveConfigPage;
+	 private DashboardPage dashboardPage;
 	
 
 

@@ -96,5 +96,11 @@ public void seacrhed_a_not_found_this_trackers_page() {
 	Assert.assertTrue(tracekrsPage.visibleList(),"User Found");
  
 }
-
+//reset button tab without entred data on employee name
+@When("User clicks on Reset button")
+public void user_clicks_on_reset_button() {
+	tracekrsPage.tabonResetButton();
+	
+   
+}
 }

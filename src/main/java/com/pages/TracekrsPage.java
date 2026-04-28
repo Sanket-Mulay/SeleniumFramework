@@ -43,6 +43,11 @@ public class TracekrsPage {
 
 	    @FindBy(xpath ="//div[@role='table']")
 WebElement listofUsers;
+	    
+	    @FindBy(xpath ="//button[contains(@type,'button')]")
+	    WebElement tabonReset;
+	    	    
+	    
 	
 	
 
@@ -148,5 +153,12 @@ WebElement listofUsers;
     }
     	  
 }
+    
+    
+    public void tabonResetButton() {
+    	 wait.until(ExpectedConditions.elementToBeClickable(tabonReset));
+    	 tabonReset.click();
+    	
+    }
 
 }

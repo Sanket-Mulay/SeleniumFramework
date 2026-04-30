@@ -20,9 +20,9 @@ import io.cucumber.java.en.When;
 
 public class AdminPageSteps extends BaseClass{
 	
-	private WaitUtils wait;
+	//private WaitUtils wait;
 	
-	private AdminPage adminPage=new AdminPage(DriverFactory.getDriver());
+	//private AdminPage adminPage=new AdminPage(DriverFactory.getDriver());
 	//private PunchInOutPage punchInPage=new PunchInOutPage(DriverFactory.getDriver());
 
 
@@ -96,12 +96,13 @@ public void enter_user_status() throws InterruptedException {
     
 }
 
-
+/*
 @When("User clicks on Search button")
 public void user_clicks_on_search_button() {
 	adminPage.serachButton();
     
 }
+*/
 
 @Then("User should see matching user record")
 public void user_should_see_matching_user_record() {

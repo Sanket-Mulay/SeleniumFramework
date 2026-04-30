@@ -9,12 +9,15 @@ import com.qa.factory.DriverFactory;
 
 public class BaseClass {
 	
-	private static String title;
-	WebDriver driver;
-	private DashboardPage alarmPage=new DashboardPage(DriverFactory.getDriver());
-	private LoginPage loginPage=new LoginPage(DriverFactory.getDriver());
+	//here use the encapsulation 
 	
-	private AdminPage adminPage=new AdminPage(DriverFactory.getDriver());
+	protected static String title;
+	WebDriver driver;
+	protected DashboardPage alarmPage=new DashboardPage(DriverFactory.getDriver());
+	protected LoginPage loginPage=new LoginPage(DriverFactory.getDriver());
+	
+	protected AdminPage adminPage=new AdminPage(DriverFactory.getDriver());
+	
 	
 
 }

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="OpenCart Regression Suite" verbose="4">
+
+    <test name="Home Page Tests">
+        <classes>
+            <class name="stepdefination.TracekrsSteps"/>
+        </classes>
+    </test>
+
+</suite>

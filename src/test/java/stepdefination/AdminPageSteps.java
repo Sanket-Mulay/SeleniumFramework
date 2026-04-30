@@ -20,9 +20,9 @@ import io.cucumber.java.en.When;
 
 public class AdminPageSteps extends BaseClass{
 	
-	private WaitUtils wait;
+	//private WaitUtils wait;
 	
-	private AdminPage adminPage=new AdminPage(DriverFactory.getDriver());
+	//private AdminPage adminPage=new AdminPage(DriverFactory.getDriver());
 	//private PunchInOutPage punchInPage=new PunchInOutPage(DriverFactory.getDriver());
 
 

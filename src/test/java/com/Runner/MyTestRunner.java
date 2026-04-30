@@ -14,10 +14,10 @@ import io.cucumber.testng.CucumberOptions;
 @CucumberOptions(
         features =  //"src/test/resources/com/features",
         		//"OrangeHRM_Automation/src/test/resources/com/features/Trackers.feature",
-        "src/test/resources/com/features/Trackers.feature",
+        "src/test/resources/com/features/LoginPage.feature",
         
         glue = {"stepdefination", "AppHooks"},
-        		 tags = "not @Skip",
+        		 tags = "@Login",
         		 plugin = {
                 "pretty",
                "html:target/cucumber-reports/cucumber.html",

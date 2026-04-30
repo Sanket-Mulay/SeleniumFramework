@@ -1,3 +1,4 @@
+@trackers
 Feature: Trackers page feature
 
 Background:
@@ -35,6 +36,7 @@ Background:
     Scenario: Verify search empty and tab pn reset button Employee Name on Trackers page
   And User clicks on Reset button
   Then Seacrhed a not found this Trackers page
+  
   
   
   

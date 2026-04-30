@@ -11,12 +11,12 @@ public class BaseClass {
 	
 	//here use the encapsulation 
 	
-	private static String title;
+	protected static String title;
 	WebDriver driver;
-	private DashboardPage alarmPage=new DashboardPage(DriverFactory.getDriver());
-	private LoginPage loginPage=new LoginPage(DriverFactory.getDriver());
+	protected DashboardPage alarmPage=new DashboardPage(DriverFactory.getDriver());
+	protected LoginPage loginPage=new LoginPage(DriverFactory.getDriver());
 	
-	private AdminPage adminPage=new AdminPage(DriverFactory.getDriver());
+	protected AdminPage adminPage=new AdminPage(DriverFactory.getDriver());
 	
 	
 

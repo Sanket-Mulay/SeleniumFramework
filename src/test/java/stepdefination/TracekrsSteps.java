@@ -51,17 +51,7 @@ public void user_clicks_on_employee_name_text_field() {
 }
 @When("User searches for a valid Employee Name")
 public void user_searches_for_a_valid_employee_name() {
-	/*
-	tracekrsPage.searchValidUserName("test user");
-	tracekrsPage.selectUserFromSuggestion("test akhil user");
-	*/
 	
-//	   String searchText = "test user";
-//	    String suggestionName = "test akhil user";
-//
-//	    tracekrsPage.searchValidUserName(searchText);
-//	    tracekrsPage.selectUserFromSuggestion(suggestionName);
-//	
 	
 
 	   tracekrsPage.searchValidUserName("manda akhil user");
@@ -96,7 +86,7 @@ public void seacrhed_a_not_found_this_trackers_page() {
 	Assert.assertTrue(tracekrsPage.visibleList(),"User Found");
  
 }
-//reset button tab without entred data on employee name
+//reset button tab without enter data on employee name
 @When("User clicks on Reset button")
 public void user_clicks_on_reset_button() {
 	tracekrsPage.tabonResetButton();

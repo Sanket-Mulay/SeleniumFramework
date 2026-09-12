@@ -14,10 +14,10 @@ import io.cucumber.testng.CucumberOptions;
 @CucumberOptions(
         features =  //"src/test/resources/com/features",
         		//"OrangeHRM_Automation/src/test/resources/com/features/Trackers.feature",
-        "src/test/resources/com/features/LoginPage.feature",
+        "src/test/resources/com/features/SearchFun.feature",
         
         glue = {"stepdefination", "AppHooks"},
-        		 tags = "@Login",
+        		 tags = "@Search",
         		 plugin = {
                 "pretty",
                "html:target/cucumber-reports/cucumber.html",
@@ -26,7 +26,7 @@ import io.cucumber.testng.CucumberOptions;
                 "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
         },
         monochrome = true,
-        publish = true
+        publish = false
 )
 
 	public class MyTestRunner extends AbstractTestNGCucumberTests {

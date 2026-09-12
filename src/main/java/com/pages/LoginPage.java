@@ -36,8 +36,7 @@ public class LoginPage {
 	}
 //3. page actions: feature (behavior) of the form of methods
 	public String getLoginPageTitle() {
-	return driver.getTitle();
-		
+	return driver.getTitle();		
 	}
 	
 	 
@@ -67,7 +66,6 @@ public class LoginPage {
 	
 
 	public void enterUserName(String username) {
-	//	driver.findElement(emailid).sendKeys(username);
 		 WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 	        WebElement userInput = wait.until(
 	            ExpectedConditions.visibilityOfElementLocated(emailid)
@@ -79,7 +77,6 @@ public class LoginPage {
 	
 
 	public void enterPassword(String pwd) {
-		//driver.findElement(password).sendKeys(pwd);
 		   WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
 	        WebElement pwdInput = wait.until(
 	            ExpectedConditions.visibilityOfElementLocated(password)
@@ -100,18 +97,7 @@ public class LoginPage {
 	
 	}
 	
-	
-	/*
-	 // ✅ Optional: check if error message is displayed
-    public boolean isErrorMessageDisplayed() {
-        try {
-            WebElement errorMsg = wait.until(ExpectedConditions.visibilityOfElementLocated(errormessage));
-            return errorMsg.isDisplayed();
-        } catch (Exception e) {
-            return false;
-        
-        }
-        */
+
 	public boolean isErrorMessageDisplayed() {
 	    try {
 	        WebElement error = wait.until(

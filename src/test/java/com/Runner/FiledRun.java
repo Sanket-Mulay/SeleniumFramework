@@ -20,39 +20,6 @@ import io.cucumber.testng.CucumberOptions;
 )
 
 public class FiledRun extends AbstractTestNGCucumberTests{
-//	@BeforeClass(alwaysRun = true)
-//    @Parameters({"browser", "featurePath"})
-//    public void setUp(
-//            @Optional("chrome") String browser,
-//            @Optional("/Cucumber/src/test/resources/com/features/LoginPage.feature") String featurePath
-//    ) {
-//        // ----------------------------
-//        // 1️⃣ Set Browser in ThreadLocal
-//        // ----------------------------
-//        BrowserContext.setBrowser(browser);
-//
-//        // ----------------------------
-//        // 2️⃣ Dynamically set feature path
-//        // ----------------------------
-//        System.setProperty("cucumber.features", featurePath);
-//
-//        // ----------------------------
-//        // 3️⃣ Logging
-//        // ----------------------------
-//        System.out.println("---------------------------------------------------");
-//        System.out.println("Runner Setup Info:");
-//        System.out.println("Feature Path -> " + featurePath);
-//        System.out.println("Browser      -> " + browser);
-//        System.out.println("---------------------------------------------------");
-//    }
-//
-//    /**
-//     * Optional: override scenarios parallelism per runner
-//     * Default: sequential scenario execution within this feature
-//     * Can be customized if needed:
-//     *
-//     * @return cucumber scenarios to run in parallel
-//     */
 
-
+	
 }

@@ -82,19 +82,19 @@ public class ApplicationHooks {
                             "image/png",
                             scenario.getName() + " - Failed Screenshot"
                     );
-                    System.out.println("❌ Failed screenshot attached");
+                    System.out.println("Failed screenshot attached");
                 }
-                // ⏭️ SKIPPED
+                // SKIPPED
                 else if ("SKIPPED".equals(scenario.getStatus().name())) {
                     scenario.attach(
                             screenshot,
                             "image/png",
                             scenario.getName() + " - Skipped Screenshot"
                     );
-                    System.out.println("⏭️ Skipped screenshot attached");
+                    System.out.println("Skipped screenshot attached");
                 }
                 
-                // ✅ PASSED
+                // PASSED
                 else {
                 	Thread.sleep(2000);
                     scenario.attach(
@@ -102,11 +102,11 @@ public class ApplicationHooks {
                             "image/png",
                             scenario.getName() + " - Passed Screenshot"
                     );
-                    System.out.println("✅ Passed screenshot attached");
+                    System.out.println("Passed screenshot attached");
                 }
 
             } catch (Exception e) {
-                System.out.println("❌ Screenshot capture failed: " + e.getMessage());
+                System.out.println("Screenshot capture failed: " + e.getMessage());
             } finally {
                 // ✅ Quit browser AFTER screenshot
               driver.quit();

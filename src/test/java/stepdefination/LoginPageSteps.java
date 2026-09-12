@@ -33,8 +33,6 @@ public class LoginPageSteps extends BaseClass{
 		    loginPage = new LoginPage(driver); 
 		DriverFactory.getDriver().get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
 		
-		
-	
 	  
 	}
 
@@ -53,30 +51,15 @@ public class LoginPageSteps extends BaseClass{
 		Assert.assertTrue(title.contains(expectedTitleName));
 	 
 	}
-//
-//	@Then("forgot your password link should be displayed")
-//	public void forgot_your_password_link_should_be_displayed() {
-//		  boolean isDisplayed = loginPage.isForgetPwdLinkExist();
-//
-//		    if (isDisplayed) {
-//		        System.out.println("✅ Forgot Password link is displayed on Login page");
-//		    } else {
-//		        System.out.println("❌ Forgot Password link is NOT displayed on Login page");
-//		    }
-//	}
-//	
 
 	@When("user enters username {string}")
 	public void user_enters_username(String username) {
-		
 		loginPage.enterUserName(username); 
-	
 		}
 
 	@When("user enters password {string}")
 	public void user_enters_password(String password) {
 		loginPage.enterPassword(password);
-		
 	}
 	  
 	
@@ -86,7 +69,7 @@ public class LoginPageSteps extends BaseClass{
 		loginPage.clickOnLogin();
 	    
 	}
-//
+
 @Then("user gets the title of the home page")
 	public void user_gets_the_title_of_the_home_page() {
 	
@@ -113,6 +96,7 @@ public class LoginPageSteps extends BaseClass{
 		    	JavascriptExecutor js = (JavascriptExecutor) driver;
 		        js.executeScript("window.scrollTo(1000,0)");
 		    }
+		    
 		    @Then("Dashboard page should be visible properly")
 		    public void dashboard_page_should_be_visible_properly() throws InterruptedException {
 		    	WebDriver driver = DriverFactory.getDriver(); // DriverFactory se driver le rahe hain

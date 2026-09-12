@@ -116,17 +116,7 @@ public class PunchInOutPage {
     	        return false;
     }
     }
-    /*
-    public String getPunchedInMessage() {
-        try {
-            WebElement message = new WebDriverWait(driver, Duration.ofSeconds(10))
-                    .until(ExpectedConditions.visibilityOfElementLocated(PunchedIN));
-            return message.getText();
-        } catch (Exception e) {
-            return null; // return null if not found
-        }
-        */
-
+  
   //click on Alarm 
   public void ClickOnOutButton() {
   	  WebElement AlarmButtonTabON = wait.until(ExpectedConditions.visibilityOfElementLocated(OutButtonXpath));
